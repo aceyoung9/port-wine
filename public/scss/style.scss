@@ -1,8 +1,32 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+// COLORS
+$ltBlueGrey: #E8F3FC;
+$highlighter: #FAF33E;
+$aqua:  #4ECCCE;
+$dkBlue: #3E4B6B;
+
+// FONTS
+
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+// FONT MIXINS
+@mixin spacedMontserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
 }
 
-a {
-  color: #00B7FF;
+body {
+  background-color: $ltBlueGrey;
+  color: $dkBlue;
+  font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+  @include spacedMontserrat;
+}
+
+p {
+  font-size: 24px;
 }
