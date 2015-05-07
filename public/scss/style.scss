@@ -13,20 +13,38 @@ $dkBlue: #3E4B6B;
 @mixin spacedMontserrat {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  letter-spacing: .14em;
+  letter-spacing: .1em;
   text-transform: uppercase;
 }
 
 body {
-  background-color: $ltBlueGrey;
-  color: $dkBlue;
+  color: lighten($dkBlue, 5%);
   font-family: 'Libre Baskerville', serif;
 }
 
+::selection {
+  background: rgba($highlighter, .8); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: rgba($highlighter, .8); /* Gecko Browsers */
+}
+
+
 h1 {
   @include spacedMontserrat;
+  color: lighten($dkBlue, 15%);
 }
 
 p {
-  font-size: 24px;
+  font-size: 20px;
+}
+
+a {
+  color: darken($aqua, 5%);
+}
+
+// Front-Page specific
+
+img.proPic {
+  margin-top: 27px;
 }

@@ -1,5 +1,18 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .row
+    .col-md-2.col-sm-3.col-xs-4.col-xs-offset-4.col-sm-offset-0
+      img(src="/images/me.jpg").img-responsive.proPic
+    .col-lg-7.col-md-9.col-sm-9.col-xs-12
+      h1 Under Reconstruction.
+      p.
+        If you came looking for a portfolio, a copy of the old site can be found
+        #[a(href="//aliceyoung9.github.io") here].
+      p.
+        Why the rewrite? A horrifying evening of wrangling my server proved to
+        me that the way I was hosting it was...a tad unsustainable. It was
+        raining 502 errors all the time. :(
+      h1 Contact
+      p 
+        #[a(href="mailto:aliceyoung.9@gmail.com") aliceyoung.9@gmail.com] does it.
