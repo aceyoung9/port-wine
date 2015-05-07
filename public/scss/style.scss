@@ -36,6 +36,13 @@ p, ul, li {
 
 a {
   color: darken($aqua, 5%);
+
+  -o-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -khtml-transition: color 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 
 // Front-Page specific
@@ -49,12 +56,21 @@ img.proPic {
 }
 
 .social img {
-  background-color: black;
-  width: 32px;
-  border-radius: 18px;
+  background-color: lighten($dkBlue, 15%);
+  width: 40px;
+  border-radius: 20px;
+
+  -o-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -khtml-transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+
   &:hover {
     background-color: $aqua;
   }
+  margin: 0 5px;
 }
 
 @media (max-width: 767px) {
