@@ -4,11 +4,6 @@ $highlighter: #FAF33E;
 $aqua:  #4ECCCE;
 $dkBlue: #3E4B6B;
 
-// FONTS
-
-@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
-
 // FONT MIXINS
 @mixin spacedMontserrat {
   font-family: 'Montserrat', sans-serif;
@@ -49,12 +44,25 @@ img.proPic {
   margin-top: 27px;
 }
 
+.social {
+  margin-top: 16px;
+}
+
+.social img {
+  background-color: black;
+  width: 32px;
+  border-radius: 18px;
+  &:hover {
+    background-color: $aqua;
+  }
+}
+
 @media (max-width: 767px) {
   h1 {
     letter-spacing: .08em;
     font-size: 20px;
   }
-  p {
-    font-size: 20px;
+  p, ul, li {
+    font-size: 16px;
   }
 }
