@@ -3,7 +3,9 @@ extends layout
 block content
   .row
     .col-md-2.col-sm-3.col-xs-4.col-xs-offset-4.col-sm-offset-0
-      img(src="/images/me.jpg").img-responsive.proPic
+      img(srcset="/images/me-108.jpg  108w, /images/me-224.jpg  224w",
+      src="/images/me.jpg",
+      alt="Picture of Alice Young, looking down at her cellphone, with a camera in her lap. Taken by Ali Ukani").img-responsive.proPic
     .col-lg-7.col-md-9.col-sm-9.col-xs-12
       h1 Under Reconstruction.
       p.
